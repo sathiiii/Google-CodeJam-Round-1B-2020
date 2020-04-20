@@ -27,7 +27,7 @@ def move(currentbit, x, y):
     global result
     if currentbit == -1:
         return
-    for direction in ['N', 'W', 'S', 'E']:
+    for direction in ['N', 'E', 'S', 'W']:
         next_x = jump_x(currentbit, x, direction)
         next_y = jump_y(currentbit, y, direction)
         # Check if the next jump is possible after the jump in the current direction.
